@@ -39,7 +39,7 @@ public class fileUpload {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("pickfiles")));
         driver.findElement(By.id("pickfiles")).click();
         Thread.sleep(5000);
-        File f = new File(downloadPath+"/plant_page-0001.jpg");
+        File f = new File(downloadPath+"/Hello.pdf");
         //koristimo if naredbu da utvrdimo da fajl koji je skinut zaista postoji
         if(f.exists()){
             Assert.assertTrue(f.exists());
